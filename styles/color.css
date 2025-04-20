@@ -1,0 +1,13 @@
+body {
+    color: #fff;
+}
+header, h2, footer {
+    background-color: rgb(40, 77, 109);
+}
+
+nav, h4 {
+    background-color: black;
+}
+a {
+    color: #fff;
+}

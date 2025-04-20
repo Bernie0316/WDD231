@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+}
+main {
+    padding: 10px;
+}
+nav, h2, footer {
+    padding: 10px;
+}
