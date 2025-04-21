@@ -1,0 +1,44 @@
+body {
+    color: #fff;
+    text-align: center;
+    font-family: "Rosario", sans-serif;
+}
+.black {
+    color: #000;
+}
+
+header, h2, footer {
+    background-color: rgb(40, 77, 109);
+}
+nav, h4 {
+    background-color: black;
+}
+
+main {
+    padding: 15px;
+}
+h1 {
+    color: rgb(40, 77, 109);
+    text-align: left;
+}
+a {
+    color: #fff;
+}
+h4 {
+    margin: 5px;
+    padding: 5px;
+}
+.done {
+    background-color: rgb(95, 50, 40);
+}
+.notyet {
+    background-color: rgb(230, 240, 240);
+    color: #000;
+}
+.done, .notyet {
+    padding: 10px;
+}
+
+nav, h2, footer {
+    padding: 10px;
+}
