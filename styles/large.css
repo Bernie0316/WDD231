@@ -29,8 +29,18 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+    h3 {
+        margin: 10px 0 10px 0;
+    }
     .courses {
         margin: 0 10px 0 10px;
         column-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    h3 {
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
