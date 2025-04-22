@@ -10,8 +10,21 @@ body {
 header, h2, footer {
     background-color: rgb(40, 77, 109);
 }
+#mypic {
+    max-width: 100px;
+}
+#headerSpan {
+    font-size: 2rem;
+}
 nav, h4 {
     background-color: black;
+}
+nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+nav a {
+    text-decoration: none;
 }
 
 main {
@@ -21,22 +34,34 @@ h1 {
     color: rgb(40, 77, 109);
     text-align: left;
 }
+section {
+    border-radius: 5px;
+    overflow: hidden;
+}
+h2 {
+    margin-top: 0;
+
+}
 a {
     color: #fff;
 }
 h4 {
     margin: 5px;
     padding: 5px;
+    border-radius: 5px;
 }
 .done {
     background-color: rgb(95, 50, 40);
+    border: 2px solid black;
 }
 .notyet {
     background-color: rgb(230, 240, 240);
     color: #000;
+    border: 2px solid lightgrey;
 }
 .done, .notyet {
     padding: 10px;
+    border-radius: 5px;
 }
 
 nav, h2, footer {
