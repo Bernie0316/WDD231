@@ -6,9 +6,18 @@ body {
 .black {
     color: #000;
 }
+hr {
+    border: 1px solid lightgrey;
+    width: 100%;
+}
 
 header, h2, footer {
     background-color: rgb(40, 77, 109);
+}
+.brand {
+    font-family: "Syne Mono", monospace;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 }
 #mypic {
     max-width: 100px;
@@ -28,11 +37,12 @@ nav a {
 }
 
 main {
-    padding: 15px;
+    padding: 20px;
 }
 h1 {
     color: rgb(40, 77, 109);
     text-align: left;
+    margin: 0;
 }
 section {
     border-radius: 5px;
@@ -40,7 +50,6 @@ section {
 }
 h2 {
     margin-top: 0;
-
 }
 a {
     color: #fff;

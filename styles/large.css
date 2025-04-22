@@ -1,4 +1,4 @@
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 650px) {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -8,7 +8,7 @@
         grid-column: 1/3;
     }
     h1 {
-        margin-bottom: 0;
+        margin-bottom: -20px;
     }
     section {
         box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
@@ -16,13 +16,14 @@
     #section3 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
     }
-    #section3 h2, div, hr {
+    #section3 h2, #section3 div, #section3 hr {
         grid-column: 1/4;
     }
     #courseFilter {
-        max-width: 150px auto;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: -10px;
     }
     #section3 div {
         display: grid;
