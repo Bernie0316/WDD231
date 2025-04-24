@@ -77,3 +77,13 @@ const courses = [
         completed: false
     }
 ]
+
+// 抓取html 按鈕
+const listElement = document.querySelector('.courseFilter');
+const allBtn = document.querySelector('#allBtn');
+const wddBtn = document.querySelector('#wddBtn');
+const cseBtn = document.querySelector('#cseBtn');
+
+function renderCourses(courseArry) {
+    listElement.innerHTML = ""; // 先清空原有內容
+}
