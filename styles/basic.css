@@ -60,16 +60,20 @@ a {
     padding: 5px;
     border-radius: 5px;
 }
-.done {
+.course {
+    margin: 10px;
+    border-radius: 8px;
+}
+.completed {
     background-color: rgb(95, 50, 40);
     border: 2px solid black;
 }
-.notyet {
+.not-completed {
     background-color: rgb(230, 240, 240);
     color: #000;
     border: 2px solid lightgrey;
 }
-.done, .notyet {
+.completed, .not-completed {
     padding: 10px;
     border-radius: 5px;
 }

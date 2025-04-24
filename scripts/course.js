@@ -78,12 +78,39 @@ const courses = [
     }
 ]
 
-// 抓取html 按鈕
-const listElement = document.querySelector('.courseFilter');
+// 按鈕
 const allBtn = document.querySelector('#allBtn');
 const wddBtn = document.querySelector('#wddBtn');
 const cseBtn = document.querySelector('#cseBtn');
 
-function renderCourses(courseArry) {
-    listElement.innerHTML = ""; // 先清空原有內容
+// 課程顯示容器
+const courseContainer = document.querySelector('.courses');
+
+function renderCourses(courseList) {
+    courseContainer.innerHTML = ""; // 清空內容
+
+    courseList.forEach(course => {
+        const h3 = document.createElement('h3');
+        h3.classList.add('course');
+        h3.classList.add(course.completed ? 'completed' : 'not-completed');
+        h3.textContent = `${course.subject} ${course.number}`;
+        courseContainer.appendChild(h3);
+    });
+    
+    const total = courseList.reduce((sum, course) => sum + course.credits, 0);
+    document.querySelector('#totalCredits').textContent = `Total total number of course listed below is ${total}`;
 }
+
+// 按鈕事件
+allBtn.addEventListener('click', () => renderCourses(courses));
+wddBtn.addEventListener('click', () => {
+    const filtered = courses.filter(c => c.subject === 'WDD');
+    renderCourses(filtered);
+});
+cseBtn.addEventListener('click', () => {
+    const filtered = courses.filter(c => c.subject === 'CSE');
+    renderCourses(filtered);
+});
+
+// 初始渲染
+renderCourses(courses);

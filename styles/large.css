@@ -7,8 +7,8 @@
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
-    #section3, h1 {
-        grid-column: 1/3;
+    #section3, h1, #totalCredits {
+        grid-column: 1/4;
     }
     h1 {
         margin-bottom: -20px;
@@ -37,7 +37,6 @@
     }
     .courses {
         margin: 0 10px 0 10px;
-        column-gap: 20px;
     }
 }
 
@@ -85,6 +84,13 @@
         /* when the button is clicked - the open class is toggled (added/removed) */
     }
     /* menu section done*/
+    #courseFilter {
+        margin: 0 auto;
+        margin-top: -10px;
+    }
+    .courseFilterButton {
+        width: 150px;
+    }
     h3 {
         margin-left: 15px;
         margin-right: 15px;
