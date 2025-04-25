@@ -1,0 +1,92 @@
+body {
+    color: #fff;
+    text-align: center;
+    font-family: "Rosario", sans-serif;
+}
+.black {
+    color: #000;
+}
+hr {
+    border: 1px solid lightgrey;
+    width: 100%;
+}
+
+header, h2, footer {
+    background-color: rgb(40, 77, 109);
+}
+.brand {
+    margin: 0 auto;
+    font-family: "Syne Mono", monospace;
+    align-items: center;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+}
+#mypic {
+    max-width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+#headerSpan {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+nav, .courseFilterButton {
+    background-color: black;
+}
+nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+nav a {
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+h1 {
+    color: rgb(40, 77, 109);
+    text-align: left;
+    margin: 0;
+}
+section {
+    border-radius: 5px;
+    overflow: hidden;
+}
+h2 {
+    margin-top: 0;
+}
+a {
+    color: #fff;
+}
+.courseFilterButton {
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+.course {
+    margin: 10px;
+    border-radius: 8px;
+}
+.completed {
+    background-color: rgb(95, 50, 40);
+    border: 2px solid black;
+}
+.not-completed {
+    background-color: rgb(230, 240, 240);
+    color: #000;
+    border: 2px solid lightgrey;
+}
+.completed, .not-completed {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav, h2, footer {
+    padding: 10px;
+}
