@@ -48,8 +48,8 @@
         background: none;
         color: #000;
         position: absolute;
-        top: 1em;
-        right: 1em;
+        top: 5px;
+        right: 5px;
     }
     #menu::before {
         content: "☰";
@@ -89,7 +89,7 @@
         margin-top: -10px;
     }
     .courseFilterButton {
-        width: 150px;
+        width: 100px;
     }
     h3 {
         margin-left: 15px;

@@ -16,14 +16,19 @@ header, h2, footer {
 }
 .brand {
     font-family: "Syne Mono", monospace;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    max-width: 500px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
 }
 #mypic {
     max-width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 #headerSpan {
     font-size: 2rem;
+    margin-top: 50px;
 }
 nav, .courseFilterButton {
     background-color: black;
