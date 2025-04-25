@@ -15,9 +15,13 @@ header, h2, footer {
     background-color: rgb(40, 77, 109);
 }
 .brand {
+    margin: 0 auto;
     font-family: "Syne Mono", monospace;
     align-items: center;
     max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
 }
@@ -25,10 +29,11 @@ header, h2, footer {
     max-width: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 #headerSpan {
     font-size: 2rem;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 nav, .courseFilterButton {
     background-color: black;
