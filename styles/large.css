@@ -41,6 +41,9 @@
 }
 
 @media screen and (max-width: 650px) {
+    #mypic {
+        margin-left: 20px;
+    }
     /* menu section */
     #menu {
         font-size: 1.5rem;
