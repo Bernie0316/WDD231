@@ -33,13 +33,16 @@ async function getProphetData(filter = "all") {
         default:
             break;
     }
-    console.table(data.prophets); // 暫時測試data
+    console.table(prophets); // 暫時測試data
 
-    displayProphets(data.prophets)
+    displayProphets(prophets)
 }
 
 const displayProphets = (prophets) => {
+    cards.innerHTML = "";
     prophets.forEach((prophet) => {
+        // 每次選染出cards前遷清空cards
+        
         const card = document.createElement('section');
         
         // build name
@@ -74,7 +77,7 @@ const displayProphets = (prophets) => {
 getProphetData();
 
 all.addEventListener('click', () => {
-    clearButtonClasses(); // 使用一個負責清空內容的涵式
+    clearButtonClasses(); // 使用一個負責清空?的涵式
     getProphetData('all');
     all.classList.add('active');
 });
@@ -84,9 +87,38 @@ utah.addEventListener('click', () => {
     getProphetData('utah');
     utah.classList.add('active');
 })
+nonus.addEventListener('click', () =>{
+    clearButtonClasses();
+    getProphetData('nonus');
+    nonus.classList.add('active');
+})
+ten.addEventListener('click', () =>{
+    clearButtonClasses();
+    getProphetData('ten');
+    ten.classList.add('active');
+})
+childs.addEventListener('click', () =>{
+    clearButtonClasses();
+    getProphetData('childs');
+    childs.classList.add('active');
+})
+old.addEventListener('click', () =>{
+    clearButtonClasses();
+    getProphetData('old');
+    old.classList.add('active');
+})
 
-// 負責清空內容的涵式
+// 負責清空?的涵式
 function clearButtonClasses() {
     const filterButtons = document.querySelectorAll('button');
     filterButtons.forEach(button => button.className="");
+}
+
+function getAgeAtDeathInYears(birthdate, deathdate) {
+    let birth = new Date(birthdate);
+    let death = new Date(deathdate);
+    if (deathdate === null) {
+        death = new Date();
+    }
+    return Math.floor((death - birth) / (365 * 24 * 60 * 60 * 1000));
 }
