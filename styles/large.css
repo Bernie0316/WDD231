@@ -61,14 +61,18 @@
         content: "❌";
     }
     .navigation {
-        display: none;
-        flex-direction: column;
+        /* display: none; */
+        /* flex-direction: column; */
+        display: grid;
+        grid-template-columns: 0fr;
         justify-content: space-around;
         list-style: none;
         background-color: #333;
+        transition: grid-template-rows 0.5s ease-out;
     }
     .navigation.open {
-        display: flex;
+        /* display: flex; */
+        grid-template-columns: 1fr;
     }
     .navigation a {
         display: none;
